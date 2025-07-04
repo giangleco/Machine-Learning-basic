@@ -1,0 +1,20 @@
+
+Gender
+Name
+score
+a
+1
+tran van tu 
+1
+b
+2
+Giang Le Hoang
+2
+c
+3
+Ha Thi Hue
+3
+d
+4
+Giang Thi Diep
+4

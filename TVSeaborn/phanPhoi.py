@@ -1,11 +1,12 @@
 #Thư viện Seaborn để vẽ biểu đồ thống kê trong python
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 from keras.src.losses import mean_squared_error
 from sklearn.metrics import r2_score
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.linear_model import LinearRegression
 #Hàm load_dataset đê đọc dữ liệu
 
@@ -56,5 +57,6 @@ g.fig.suptitle("Phân phối tiền tip (Histogram + KDE ", y=1.05)
 #Mã hóa labelEncoder
 le = LabelEncoder()
 tien_tips["gender_encoded"] = le.fit_transform(tien_tips['sex'])
-#Mã hóa Onehotencoding
 
+#Mã hóa Onehotencoding
+size_encoder=OneHotEncoder()
